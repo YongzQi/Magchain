@@ -1,4 +1,4 @@
-package com.dce.blockchain.web.util;
+package com.mag.blockchain.web.util;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -6,7 +6,7 @@ import java.net.UnknownHostException;
 public class CommonUtil{
 
     /**
-     * 获取本地ip
+     * get local ip
      * @return
      */
     public static String getLocalIp() {

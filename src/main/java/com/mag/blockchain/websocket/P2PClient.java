@@ -1,4 +1,4 @@
-package com.dce.blockchain.websocket;
+package com.mag.blockchain.websocket;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -8,12 +8,12 @@ import org.java_websocket.handshake.ServerHandshake;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.dce.blockchain.web.service.P2PService;
+import com.mag.blockchain.web.service.P2PService;
 
 /**
  * p2p客户端
  * 
- * @author Jared Jia
+ * @author Yongzheng Qi
  *
  */
 @Component

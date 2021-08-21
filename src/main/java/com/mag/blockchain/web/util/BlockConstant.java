@@ -1,9 +1,9 @@
-package com.dce.blockchain.web.util;
+package com.mag.blockchain.web.util;
 
 /**
- * 常量工具类
+ * Constant
  * 
- * @author JaredJia
+ * @author Yongzheng Qi
  *
  */
 public class BlockConstant {

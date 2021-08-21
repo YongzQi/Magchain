@@ -1,4 +1,4 @@
-package com.dce.blockchain.web.util;
+package com.mag.blockchain.web.util;
 
 import java.security.MessageDigest;
 import java.util.UUID;
@@ -6,9 +6,9 @@ import org.springframework.util.DigestUtils;
 
 
 /**
- * 密码学工具类
+ * CryptoUtil
  * 
- * @author Jared Jia
+ * @author Yongzheng Qi
  *
  */
 public class CryptoUtil {

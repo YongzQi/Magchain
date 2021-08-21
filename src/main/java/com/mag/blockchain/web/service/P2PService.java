@@ -1,4 +1,4 @@
-package com.dce.blockchain.web.service;
+package com.mag.blockchain.web.service;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,17 +10,17 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import com.alibaba.fastjson.JSON;
-import com.dce.blockchain.web.model.Block;
-import com.dce.blockchain.web.model.Message;
-import com.dce.blockchain.web.util.BlockCache;
-import com.dce.blockchain.web.util.BlockConstant;
-import com.dce.blockchain.websocket.P2PClient;
-import com.dce.blockchain.websocket.P2PServer;
+import com.mag.blockchain.web.model.Block;
+import com.mag.blockchain.web.model.Message;
+import com.mag.blockchain.web.util.BlockCache;
+import com.mag.blockchain.web.util.BlockConstant;
+import com.mag.blockchain.websocket.P2PClient;
+import com.mag.blockchain.websocket.P2PServer;
 
 /**
- * p2p网络服务类
+ * p2p
  * 
- * @author Jared Jia
+ * @author Yongzheng Qi
  *
  */
 @Service
@@ -47,8 +47,8 @@ public class P2PService implements ApplicationRunner {
 	public void handleMessage(WebSocket webSocket, String msg, List<WebSocket> sockets) {
 		try {
 			Message message = JSON.parseObject(msg, Message.class);
-			System.out.println("接收到IP地址为：" +webSocket.getRemoteSocketAddress().getAddress().toString()
-					+"，端口号为："+ webSocket.getRemoteSocketAddress().getPort() + "的p2p消息："
+			System.out.println("IP address to receive message: " +webSocket.getRemoteSocketAddress().getAddress().toString()
+					+", Port: "+ webSocket.getRemoteSocketAddress().getPort() + "Message is: "
 			        + JSON.toJSONString(message));
 			switch (message.getType()) {
 			//客户端请求查询最新的区块:1
@@ -69,14 +69,14 @@ public class P2PService implements ApplicationRunner {
 				break;
 			}
 		} catch (Exception e) {
-			System.out.println("处理IP地址为：" +webSocket.getRemoteSocketAddress().getAddress().toString()
-				+"，端口号为："+ webSocket.getRemoteSocketAddress().getPort() + "的p2p消息错误:" 
+			System.out.println("IP address: " +webSocket.getRemoteSocketAddress().getAddress().toString()
+				+", port is: "+ webSocket.getRemoteSocketAddress().getPort() + "Error message"
 				+ e.getMessage());
 		}
 	}
 
 	/**
-	 * 处理其它节点发送过来的区块信息
+	 * handle other nodes message
 	 * @param blockData
 	 * @param sockets
 	 */
@@ -97,7 +97,7 @@ public class P2PService implements ApplicationRunner {
 					if (blockService.addBlock(latestBlockReceived)) {
 						broatcast(responseLatestBlockMsg());
 					}
-					System.out.println("将新接收到的区块加入到本地的区块链");
+					System.out.println("add received block to the chain");
 				}
 			}else if(latestBlock == null) {
 				broatcast(queryBlockChainMsg());

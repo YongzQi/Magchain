@@ -1,4 +1,4 @@
-package com.dce.blockchain.web.util;
+package com.mag.blockchain.web.util;
 
 import java.security.MessageDigest;
 import java.util.Base64;
@@ -11,7 +11,7 @@ import javax.crypto.spec.SecretKeySpec;
 /**
  * 基础加密组件
  *
- * @author Jared Jia
+ * @author Yongzheng Qi
  * 
  */
 public abstract class Coder {

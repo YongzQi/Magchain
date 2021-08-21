@@ -1,11 +1,11 @@
-package com.dce.blockchain.web.model;
+package com.mag.blockchain.web.model;
 
 import java.io.Serializable;
 
 /**
  * p2p通讯消息
  *
- * @author Jared Jia
+ * @author Yongzheng Qi
  * 
  */
 public class Message implements Serializable {

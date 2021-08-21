@@ -1,11 +1,11 @@
-package com.dce.blockchain.web.model;
+package com.mag.blockchain.web.model;
 
 import java.io.Serializable;
 
 /**
  * 业务数据模型
  * 
- * @author Jared Jia
+ * @author Yongzheng Qi
  *
  */
 public class Transaction implements Serializable {

@@ -1,4 +1,4 @@
-package com.dce.blockchain.web.service;
+package com.mag.blockchain.web.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,15 +7,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.alibaba.fastjson.JSON;
-import com.dce.blockchain.web.model.Block;
-import com.dce.blockchain.web.model.Transaction;
-import com.dce.blockchain.web.util.BlockCache;
-import com.dce.blockchain.web.util.CryptoUtil;
+import com.mag.blockchain.web.model.Block;
+import com.mag.blockchain.web.model.Transaction;
+import com.mag.blockchain.web.util.BlockCache;
+import com.mag.blockchain.web.util.CryptoUtil;
 
 /**
  * 区块链核心服务
  * 
- * @author Jared Jia
+ * @author Yongzheng Qi
  *
  */
 @Service

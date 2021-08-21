@@ -1,20 +1,19 @@
-package com.dce.blockchain.web.service;
+package com.mag.blockchain.web.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
-import com.dce.blockchain.web.model.Block;
-import com.dce.blockchain.web.model.Message;
-import com.dce.blockchain.web.model.Transaction;
-import com.dce.blockchain.web.util.BlockCache;
-import com.dce.blockchain.web.util.BlockConstant;
-import com.dce.blockchain.web.util.CommonUtil;
+import com.mag.blockchain.web.model.Block;
+import com.mag.blockchain.web.model.Message;
+import com.mag.blockchain.web.model.Transaction;
+import com.mag.blockchain.web.util.BlockCache;
+import com.mag.blockchain.web.util.BlockConstant;
+import com.mag.blockchain.web.util.CommonUtil;
 
 /**
- * 共识机制
- * 采用POW即工作量证明实现共识
+ * POW
  * @author Administrator
  *
  */
@@ -34,7 +33,7 @@ public class PowService {
 	 * 通过“挖矿”进行工作量证明，实现节点间的共识
 	 * 
 	 * @return
-	 * @throws UnknownHostException
+	 * @throws
 	 */
 	public Block mine(){
 		

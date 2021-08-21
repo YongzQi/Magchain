@@ -1,4 +1,4 @@
-package com.dce.blockchain.web.model;
+package com.mag.blockchain.web.model;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 区块结构
  * 
- * @author Jared Jia
+ * @author Yongzheng Qi
  *
  */
 public class Block implements Serializable {

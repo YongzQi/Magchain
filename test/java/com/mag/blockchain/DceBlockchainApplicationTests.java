@@ -1,4 +1,4 @@
-package java.com.dce.blockchain;
+package com.mag.blockchain;
 
 import org.junit.After;
 import org.junit.Before;

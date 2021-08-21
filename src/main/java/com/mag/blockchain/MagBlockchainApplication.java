@@ -1,13 +1,13 @@
-package com.dce.blockchain;
+package com.mag.blockchain;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DceBlockchainApplication {
+public class MagBlockchainApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DceBlockchainApplication.class, args);
+        SpringApplication.run(MagBlockchainApplication.class, args);
     }
 
 }
